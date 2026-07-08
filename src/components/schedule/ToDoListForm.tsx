@@ -31,6 +31,7 @@ export default function Home() {
 
   const startEdit = (task:Task) => {
     setEditId(task.id)
+    setNewTitle(task.title)
     setEditConcept(task.concept)
     setNewDate(task.dueDate)
   }
