@@ -1,6 +1,12 @@
 import { ReactNode } from "react";
+import type { Metadata } from "next";
 import "./globals.css"
 import Header from "@/components/layout/Header";
+
+export const metadata: Metadata = {
+  title: "To do list",
+  description:"タスク管理アプリ"
+};
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
